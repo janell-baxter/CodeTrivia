@@ -95,7 +95,7 @@ function App() {
             </main>
 
             <footer>
-                Janell Baxter, 2026
+                2026
             </footer>
 
         </div>
