@@ -12,7 +12,8 @@ body {
     "wdth" 100;
 
     margin: 0;
-    background-color: #f4f6fa;
+    background: #FFFDF0;
+    background: linear-gradient(180deg,rgba(255, 253, 240, 1) 0%, rgba(213, 246, 247, 1) 50%, rgba(255, 253, 240, 1) 100%);
     color: #263238;
 }
 
@@ -30,7 +31,7 @@ body {
 }
 
 .label {
-    color: #5267d9;
+    color: #5267D9;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -39,7 +40,7 @@ body {
 .header h1 {
     font-size: 38px;
     margin: 12px 0;
-    color: #202a44;
+    color: #202A44;
 }
 
 .header p {
@@ -78,11 +79,11 @@ body {
 
     width: 100%;
     padding: 18px;
+    
+    border-bottom: 2px solid #666;
+    border-radius: 20px 20px 0px 0px;
 
-    border: 1px solid #dfe3ec;
-    border-radius: 8px;
-
-    background-color: #f8f9fc;
+    background-color: #FAFEFF;
     color: #26344d;
 
     font-size: 15px;
@@ -95,26 +96,29 @@ body {
 }
 
 .question:hover {
-    background-color: #e9edff;
+    background-color: #EDDD53;
 }
 
 .question:focus-visible {
-    outline: 3px solid #5267d9;
+    background-color: #90DEB1;
+    border-bottom: 2px solid #90DEB1;
+    outline: 3px solid #5267D9;
     outline-offset: 3px;
 }
 
 .icon {
     font-size: 22px;
-    color: #5267d9;
+    color: #5267D9;
 }
 
 .answer {
     padding: 18px;
 
-    background-color: #eef1ff;
-    border-left: 4px solid #5267d9;
+    background-color: #FAFEFF;
+    border-bottom: 2px solid #666;
+    border-radius: 0px 0px 20px 20px;
 
-    color: #46516a;
+    color: #46516A;
     line-height: 1.7;
 
     animation: appear 0.2s ease;
@@ -135,7 +139,7 @@ body {
 footer {
     text-align: center;
     margin-top: 30px;
-    color: #9299a8;
+    color: #9299A8;
     font-size: 13px;
 }
 
