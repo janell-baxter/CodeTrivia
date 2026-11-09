@@ -102,8 +102,8 @@ body {
 .question:focus-visible {
     background-color: #90DEB1;
     border-bottom: 2px solid #90DEB1;
-    outline: 3px solid #5267D9;
-    outline-offset: 3px;
+    /*outline: 3px solid #5267D9;
+    outline-offset: 3px;*/
 }
 
 .icon {
