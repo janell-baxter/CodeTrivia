@@ -1,16 +1,13 @@
 import { useState } from 'react';
 import './App.css';
 
-// Individual trivia question component
 function TriviaItem({ question, answer }) {
 
-    // Each question maintains its own visibility state
+    // Each question has its own visibility state
     const [isVisible, setIsVisible] = useState(false);
 
     return (
         <div className="trivia-item">
-
-            {/* Question button */}
             <button
                 className="question"
                 onClick={() => setIsVisible(!isVisible)}
@@ -24,7 +21,6 @@ function TriviaItem({ question, answer }) {
 
             </button>
 
-            {/* Display the answer only when visible */}
             {isVisible && (
                 <div className="answer">
                     {answer}
@@ -36,10 +32,9 @@ function TriviaItem({ question, answer }) {
 }
 
 
-// Main application component
 function App() {
 
-    // Trivia questions stored as an array of objects
+    // Questions stored as an array of objects
     const trivia = [
 
         {
@@ -57,7 +52,7 @@ function App() {
         {
             question: "When was the oldest known analog computer created?",
 
-            answer: "The Antikythera mechanism, dating to approximately 150–100 BCE, was used to calculate astronomical positions."
+            answer: "The Antikythera mechanism, dating to approximately 150â€“100 BCE, was used to calculate astronomical positions."
         },
 
         {
@@ -74,18 +69,8 @@ function App() {
         <div className="container">
 
             <header className="header">
-
-                <div className="label">
-                    COMPUTER SCIENCE
-                </div>
-
                 <h1>Code Trivia</h1>
-
-                <p>
-                    Test your knowledge of computer science
-                    and discover some interesting facts!
-                </p>
-
+                <p>Code trivia application built with React and JavaScript.</p>
             </header>
 
 
@@ -97,8 +82,6 @@ function App() {
                     Click a question to reveal its answer.
                 </p>
 
-
-                {/* Generate a TriviaItem for each question */}
                 {trivia.map((item, index) => (
 
                     <TriviaItem
@@ -111,9 +94,8 @@ function App() {
 
             </main>
 
-
             <footer>
-                Built with React and JavaScript
+                Janell Baxter, 2026
             </footer>
 
         </div>
